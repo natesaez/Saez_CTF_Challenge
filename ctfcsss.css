@@ -1,0 +1,27 @@
+.container {
+    text-align: center;
+}
+#linkContainer {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    visibility: hidden;
+}
+button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+a:hover {
+    text-decoration: underline;
+}

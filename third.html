@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>Step_3</title>
+    <link rel="stylesheet" href="thirdhtml.css">
+    <style>
+        body {
+            -webkit-user-select: none;  /* Chrome, Safari, Opera */
+            -moz-user-select: none;     /* Firefox */
+            -ms-user-select: none;      /* Internet Explorer/Edge */
+            user-select: none;          /* Standard syntax */
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+        }
+        #linkContainer {
+            margin-top: 20px;
+            font-size: 1.2rem;
+            visibility: hidden;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 5px;
+            background-color: #ff0000;
+            color: rgb(255, 0, 0);
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ff0000;
+        }
+        a {
+            text-decoration: none;
+            color: #ff0000;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+ </head>
+ <body>
+    <div class="container">
+        <button onclick="showLink()">Show Link</button>
+        <div id="linkContainer">
+            <a id="nextPageLink" href="3.html">Go to Next Page</a>
+        </div>
+    </div>
+
+    <script>
+        function showLink() {
+            const linkContainer = document.getElementById('linkContainer');
+            linkContainer.style.visibility = 'visible';
+        }
+    </script>
+ </body>
+ <footer>
+    <p style="color: rgb(255, 0, 0);">That's it! Let's put it all together now!</p>
+    <a style="color: rgb(255, 0, 0);" href="password.html">Next</a>
+ </footer>
+</html>

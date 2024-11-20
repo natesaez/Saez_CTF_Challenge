@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Title for web page tab</title> 
+        <link rel="stylesheet" href="ctfcsss.css">
+    </head>
+    <body>
+        <div class="container">
+            <button onclick="showLink()">Show Link</button>
+            <div id="linkContainer">
+                <a id="nextPageLink" href="third.html">Go to Next Page</a>
+            </div>
+        </div>
+    
+        <script>
+            function showLink() {
+                const linkContainer = document.getElementById('linkContainer');
+                linkContainer.style.visibility = 'visible';
+            }
+        </script>
+        <p style="text-align: center;">The next part is: _was_</p>
+    </body>
+</html>

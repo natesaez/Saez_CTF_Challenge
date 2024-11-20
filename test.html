@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encrypted Content Example</title>
+</head>
+<body>
+    <div id="dynamicContent"></div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Correct base64 encoded string for "picoCTF{That_"
+            const encodedContent = "cGljb0NURntUaGF0";  // Correct Base64 encoding
+            
+            // Decode the base64 string
+            const decodedContent = atob(encodedContent);
+            
+            // Display the decoded content on the page
+            document.getElementById("dynamicContent").innerHTML = "<h1>" + decodedContent + "_" + "</h1>";
+        });
+    </script>
+</body>
+</html>
